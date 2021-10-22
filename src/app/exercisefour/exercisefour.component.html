@@ -1,0 +1,5 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <label for="email">Email:</label>
+  <input type="text" email ngModel name="email">
+  <button type="submit" [disabled]="!f.valid">Submit</button>
+</form>
